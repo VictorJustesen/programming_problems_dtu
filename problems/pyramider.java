@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
         public class pyramider {
@@ -6,10 +7,19 @@ import java.util.Scanner;
 
                 System.out.print("indtast værdien af a: ");
                 int a = input.nextInt();
-                System.out.println(a);
+                int y, i, j;
 
-                for (i=a ; i>0 ; i--){
 
+                for (y = a; y > 0; y--) {
+                    System.out.println("dette er pyramide nummer: "+y);
+                    for (i = y; i > 0; i--) {
+                        for (j = i; j > 0; j--) {
+                            System.out.print("#");
+                        }
+
+                        System.out.println();
+                    }
+                    System.out.println();
                 }
             }
 }
